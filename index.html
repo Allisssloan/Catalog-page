@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Allure Boutique</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="imagenes/logo-allure.jpeg" alt="Allure Logo" class="logo"/>
+    <h1>ALLURE</h1>
+    <nav class="nav-buttons">
+      <button onclick="filterDresses('all')">All</button>
+      <button onclick="filterDresses('Noche')">Noche</button>
+      <button onclick="filterDresses('Gala')">Gala</button>
+      <button onclick="filterDresses('Boda')">Boda (invitada) </button>
+      <button onclick="filterDresses('Coctel')">Coctel </button>
+      <button onclick="filterDresses('Graduacion')">Graduacion</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <div class="dress-card Noche">
+        <img src="images/dress1.jpg" alt="Black Dress" />
+        <p>Vestido de Noche</p>
+      </div>
+      <div class="dress-card Gala">
+        <img src="images/dress2.jpg" alt="Champagne Dress" />
+        <p>Vestido de Gala </p>
+      </div>
+      <div class="dress-card Graduacion">
+        <img src="images/dress3.jpg" alt="Blue Dress" />
+        <p>dress Coctel</p>
+      </div>
+    </section>
+
+    <section class="appointment" id="appointment">
+      <h2>Book an Appointment</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="datetime-local" required />
+        <textarea placeholder="Notes..."></textarea>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Allure Boutique. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
